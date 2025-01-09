@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.calculator-box {
+    display: inline-block;
+    border: 3px solid #333; 
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+input#result {
+    width: 250px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:active {
+    background-color: #e0e0e0;
+}
+
+button[onclick="reset()"] {
+    background-color: #ff6347; 
+    color: #fff;
+}
+
+button[onclick="reset()"]:hover {
+    background-color: #d9534f;
+}
+
+button[onclick="showresult()"] {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+button[onclick="showresult()"]:hover {
+    background-color: #4cae4c;
+}
+
+button[onclick^="setoperator"] {
+    background-color: #f0ad4e; 
+    color: #fff;
+}
+
+button[onclick^="setoperator"]:hover {
+    background-color: #ec971f;
+}
